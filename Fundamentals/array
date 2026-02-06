@@ -1,0 +1,19 @@
+const friends = ["Michael", "Stevem", "Peter"];
+console.log(friends);
+
+const year = new Array(1991, 1984, 2008, 2020);
+console.log(friends[0]);
+console.log(friends.length);
+
+friends[2] = "Jay";
+console.log(friends);
+
+const firstName = "Jonas";
+const jonas = [firstName, "Teacher", 2037 - 1991, friends];
+console.log(jonas);
+
+// Exercise
+cosnt calcAge = function (birthYear){
+    return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
