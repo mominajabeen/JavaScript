@@ -1,0 +1,33 @@
+const jessica1 = {
+  firstName: 'Jessica',
+  lastName: 'Will',
+  age: 27,
+};
+const marriedJessica = jessica1;
+marriedJessica.lastName = 'Divid';
+
+console.log('Before:', jessica1);
+console.log('After:', marriedJessica);
+
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Will',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+// Shallow copy
+const jessicaCopy = { ...jessica };
+jessicaCopy.lastName = 'Davis';
+
+console.log(jessica, jessicaCopy);
+// jessica.family.push('Marry');
+
+console.log('Before:', jessica);
+console.log('After:', jessicaCopy);
+
+// Deep copy/clone
+const jessicaClone = structuredClone(jessica);
+
+jessicaClone.family.push('Marry');
+console.log('Original', jessica);
+console.log('Clone', jessicaClone);
